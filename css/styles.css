@@ -273,23 +273,25 @@ background-color: var(--secundario);
 
 
 .botonformulario {
-background-color: var(--secundario);
-color: var(--blanco);
-padding: 1rem 3rem;
-text-decoration: none;
-text-transform: uppercase;
-border-radius: .5rem;
-font-weight: bold;
-border: none;
-text-align: center;
-margin: 3rem;
 
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    font-weight: bold;
+    border: none;
+    width: 95%;
+    text-align: center;
+    margin: 2rem;
+   
 
 
 }
 
 .botonformulario:hover{
-
+    
     cursor: pointer;
 }
 
@@ -330,4 +332,23 @@ margin: 3rem;
 
 
 /*PRESUPUESTO*/
+ 
+    @media (min-width:768px) {
 
+        .contenedorformulario {
+         display: grid;
+         grid-template-columns: 50% 50%;
+         grid-row: auto auto auto;
+         gap: 1rem;
+     
+        }
+    
+        .campo:nth-child(1),
+        .campo:nth-child(2),
+        .campo:nth-child(3),
+        .campo:nth-child(4){
+         grid-column: 1/3;
+        }
+     
+     
+ }
